@@ -19,7 +19,15 @@ After successfully compiling, to execute the program enter ```./sim <ROB_SIZE> <
 <img width="474" height="354" alt="image" src="https://github.com/user-attachments/assets/d4c87433-de35-4083-9f9d-5c7d8415a325" />
 <img width="474" height="354" alt="image" src="https://github.com/user-attachments/assets/98eb61bf-381e-4b28-80db-8b292dc93c7f" />
 
-<img width="486" height="260" alt="image" src="https://github.com/user-attachments/assets/98c05627-6c88-49f0-a7bf-9b42823c509f" />
+#### "Optimized IQ_SIZE per WIDTH"   
+(Min IQ_SIZE that still achieves within 6% of the IPC of the largest IQ_SIZE)
+
+||gcc|perl|
+|--|--|--|
+|WIDTH=1|8|8|
+|WIDTH=2|16|16|
+|WIDTH=4|32|64|
+|WIDTH=8|64|128|
 
 ### Effect of Different ROB Sizes
 (NOTE: IQ_SIZE and ROB_SIZE are both in Bytes)
