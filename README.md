@@ -4,6 +4,9 @@ This is a simulator for a superscaler Out-of-Order(OOO) Pipeline I developed for
 
 The simulator reads a trace file of all the instruction that will be passed through it, each line contains pc number, operation type, destination register number, source register 1 number, and source register 2 number. It allows for the user to configure the size of the Reorder Buffer(ROB), Issue Queue(IQ), and function unit. The simulator measures the number of cycles it takes to complete the instructions from the trace as well as the IPC, which gave me the opportunity to perform a deeper analyses of IPC between different sizes across different sized configurations, which I will attach below.
 
+**DISCLAIMER:**  
+This code is my own original work. It may not be used, copied, or adapted by anyone currently taking this course or by future students for their own project submissions. Doing so would violate the course’s academic integrity policies, which the professor has clearly stated. This repository is publicly available solely for the purpose of showcasing my work to recruiters, interviewers, and potential employers.
+
 ## How to Execute the Program
 
 There is a Makefile in the Project3/src file that compiles the program, make sure that the flag is set on -O3 when executing for a regular run and -g when trying to decode on gdb.
